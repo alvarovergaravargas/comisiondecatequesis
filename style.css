@@ -1,0 +1,124 @@
+/* --- Variables Globales y Reseteo Básico --- */
+:root {
+    --primary-color: #003366; /* Azul Arquidiocesano */
+    --accent-color: #D4AF37;  /* Dorado/Ocre */
+    --secondary-color: #2E8B57; /* Verde Esperanza */
+    --text-color: #333333;
+    --bg-light: #F4F4F4;
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- Estructura y Contenedores --- */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* --- Títulos y Tipografía --- */
+h1, h2, h3 {
+    font-family: var(--font-title);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* --- Navegación (Mobile First) --- */
+.navbar {
+    background: #fff;
+    padding: 1rem;
+    border-bottom: 2px solid var(--bg-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+/* (Aquí iría el JS para el menú hamburguesa en móvil) */
+
+/* --- Hero Section (Encuentro) --- */
+.hero {
+    background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('https://images.pexels.com/photos/372326/pexels-photo-372326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #c5a230;
+}
+
+/* --- Secciones y Tarjetas (Cards) --- */
+.section {
+    padding: 40px 0;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna en móvil */
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+/* --- Footer (Guía Segura) --- */
+.footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+/* --- Media Queries para Diseño Responsivo --- */
+@media (min-width: 768px) {
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablet/desktop */
+    }
+}
