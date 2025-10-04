@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comisión Arquidiocesana de Catequesis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo_arquidiocesis.png" alt="Logo Arquidiócesis" height="50">
+                <span>Catequesis</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#ivc">Iniciación Cristiana</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#mision">Misión</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Un Encuentro que Transforma la Vida</h1>
+            <p>Descubre el camino de la fe, la alegría del Evangelio y la vida en comunidad.</p>
+            <a href="#formulario-inscripcion" class="btn-primary">Inicia tu Camino Aquí</a>
+        </section>
+
+        <section id="ivc" class="section container">
+            <h2 class="section-title">Iniciación a la Vida Cristiana</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Catecumenado Bautismal</h3>
+                    <p>Para quienes desean iniciar su vida en la fe a través del Bautismo.</p>
+                </div>
+                <div class="card">
+                    <h3>Catequesis de Niños</h3>
+                    <p>Itinerarios para completar la iniciación, centrados en la Primera Comunión y Confirmación.</p>
+                </div>
+                <div class="card">
+                    <h3>Formación de Adultos</h3>
+                    <p>Para bautizados que buscan reavivar y profundizar su fe y compromiso.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion" class="section container" style="background-color: var(--bg-light);">
+             <h2 class="section-title">Formación Permanente para Agentes</h2>
+            <div class="cards-grid">
+                 <div class="card">
+                    <h3>Escuela de Catequistas</h3>
+                    <p>Formación integral en el ser, saber y saber hacer del catequista.</p>
+                </div>
+                <div class="card">
+                    <h3>Pastoral Bíblica</h3>
+                    <p>Recursos de Lectio Divina y meditación de la Palabra de Dios.</p>
+                </div>
+                <div class="card">
+                    <h3>Doctrina Social</h3>
+                    <p>Materiales para vivir la fe en el compromiso por la justicia y el servicio.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="formulario-inscripcion" class="section container">
+            <h2 class="section-title">Formulario de Inscripción a la Catequesis</h2>
+            <form id="inscriptionForm">
+                <input type="text" id="fullName" placeholder="Nombre Completo" required>
+                <input type="email" id="email" placeholder="Correo Electrónico" required>
+                <input type="tel" id="phone" placeholder="Teléfono Móvil">
+                
+                <div>
+                    <input type="checkbox" id="dataConsent" name="dataConsent" required>
+                    <label for="dataConsent">Acepto el tratamiento de mis datos personales según la política de privacidad.</label>
+                </div>
+                 <div>
+                    <input type="checkbox" id="imageConsent" name="imageConsent">
+                    <label for="imageConsent">Autorizo el uso de imágenes con fines pastorales y de difusión.</label>
+                </div>
+                
+                <button type="submit" class="btn-primary">Enviar Inscripción</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            <strong>Comisión Arquidiocesana de Catequesis - Sitio Oficial</strong><br>
+            [Dirección de la Arquidiócesis] - [Teléfono de contacto]
+        </p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">F</a> <a href="#" aria-label="Twitter">T</a>
+            <a href="#" aria-label="WhatsApp">W</a>
+        </div>
+        <p>&copy; 2024 Arquidiócesis. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
